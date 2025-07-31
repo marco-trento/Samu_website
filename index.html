@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sammurai Piercing: Precision. Artistry. Expression.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        @keyframes logoFloat {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); }
+            50% { transform: translate(-50%, -50%) scale(1.05); }
+        }
+        .homepage-logo-bg img {
+            position: absolute;
+            top: 12%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 250px;
+            width: 100%;
+            height: auto;
+            opacity: 0.25;
+            z-index: 1;
+            pointer-events: none;
+            animation: logoFloat 6s ease-in-out infinite;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+        }
+    </style>
+</head>
+<body>
+    <div class="homepage-logo-bg" aria-hidden="true">
+        <img src="logo-removebg-preview.png" alt="Sammurai Piercing Logo Background">
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Sammurai Piercing</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#typology">Lista Piercing</a></li>
+                    <li><a href="#portfolio">Galleria</a></li>
+                    <li><a href="#booking">Prenota un appuntamento</a></li>
+                    <li><a href="#about">Su di me</a></li>
+                    <li><a href="#contact">Contatti</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-symbol-bg" aria-hidden="true">
+                <!-- Large abstract line art SVG background -->
+                <svg width="100%" height="100%" viewBox="0 0 1440 700" fill="none" xmlns="http://www.w3.org/2000/svg" style="position:absolute;top:0;left:0;width:100%;height:100%;opacity:0.22;">
+                  <path d="M0 400 Q360 200 720 400 T1440 400" stroke="#b0b0b0" stroke-width="18" fill="none"/>
+                  <path d="M0 600 Q480 300 960 600 T1440 600" stroke="#c0c0c0" stroke-width="10" fill="none"/>
+                  <path d="M0 200 Q720 0 1440 200" stroke="#e0e0e0" stroke-width="8" fill="none"/>
+                </svg>
+            </div>
+            <div class="hero-content">
+                <div class="framed-hero">
+                    <h1>Sammurai Piercing</h1>
+                    <h2>Crafting Your Story, One Pierce at a Time.</h2>
+                    <a href="#booking" class="btn primary-btn">Prenota un appuntamento</a>
+                </div>
+            </div>
+            </section>
+
+        <section id="typology" class="section-padded">
+            <div class="container">
+                <h2>Lista dei piercing</h2>
+                <p>Scopri la nostra gamma completa di piercing, eseguiti con precisione e cura. I prezzi includono gioielli di alta qualità e un servizio professionale.</p>
+                <ul class="piercing-list" id="piercing-list">
+                    <!-- Ear Piercings -->
+                    <li><span class="piercing-name">Lobo</span><span class="piercing-price">40 €</span></li>
+                    <li><span class="piercing-name">Helix</span><span class="piercing-price">50 €</span></li>
+                    <li><span class="piercing-name">Trago</span><span class="piercing-price">55 €</span></li>
+                    <li class="extra-piercing" style="display:none;"><span class="piercing-name">Daith</span><span class="piercing-price">50 €</span></li>
+                    <li class="extra-piercing" style="display:none;"><span class="piercing-name">Conch</span><span class="piercing-price">50 €</span></li>
+                    <li class="extra-piercing" style="display:none;"><span class="piercing-name">Rook</span><span class="piercing-price">60 €</span></li>
+                    <li class="extra-piercing" style="display:none;"><span class="piercing-name">Flat</span><span class="piercing-price">50 €</span></li>
+                    <li class="extra-piercing" style="display:none;"><span class="piercing-name">Forward Helix</span><span class="piercing-price">55 €</span></li>
+                    <li class="extra-piercing" style="display:none;"><span class="piercing-name">Snug / Anti-trago</span><span class="piercing-price">55 €</span></li>
+                    
+                    <!-- Face Piercings -->
+                    <li class="extra-piercing" style="display:none;"><span class="piercing-name">Nostril</span><span class="piercing-price">45 €</span></li>
+                    <li class="extra-piercing" style="display:none;"><span class="piercing-name">Septum</span><span class="piercing-price">45 €</span></li>
+                    <li class="extra-piercing" style="display:none;"><span class="piercing-name">Medusa</span><span class="piercing-price">55 €</span></li>
+                    <li class="extra-piercing" style="display:none;"><span class="piercing-name">Bridge</span><span class="piercing-price">55 €</span></li>
+                    <li class="extra-piercing" style="display:none;"><span class="piercing-name">Eyebrow</span><span class="piercing-price">55 €</span></li>
+                    <li class="extra-piercing" style="display:none;"><span class="piercing-name">Labret</span><span class="piercing-price">55 €</span></li>
+                    <li class="extra-piercing" style="display:none;"><span class="piercing-name">Lingua <span style='font-size:0.8em;'></span></span><span class="piercing-price">60 €</span></li>
+                    <li class="extra-piercing" style="display:none;"><span class="piercing-name">Monroe</span><span class="piercing-price">50 €</span></li>
+                    
+                    <!-- Body Piercings -->
+                    <li class="extra-piercing" style="display:none;"><span class="piercing-name">Navel</span><span class="piercing-price">60 €</span></li>
+                    <li class="extra-piercing" style="display:none;"><span class="piercing-name">Nipple</span><span class="piercing-price">60 €</span></li>
+                    <li class="extra-piercing" style="display:none;"><span class="piercing-name">Microdermal</span><span class="piercing-price">65 €</span></li>
+                </ul>
+                <button id="toggle-piercing-list" class="btn secondary-btn" style="margin: 30px auto 0 auto; display: block;">Show all piercings</button>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section-padded light-bg">
+            <div class="container">
+                <h2>Galleria</h2>
+                <p>Scopri la nostra galleria, un tributo alla nostra passione e alla nostra abilità.</p>
+                <div class="portfolio-grid">
+                    <img src="images/photo1.jpg" alt="Beautiful Piercing 1" class="framed-img">
+                    <img src="images/photo2.jpg" alt="Beautiful Piercing 2" class="framed-img">
+                    <img src="images/piercing3.jpg" alt="Beautiful Piercing 3" class="framed-img">
+                    </div>
+            </div>
+        </section>
+
+        <section id="booking" class="section-padded">
+            <div class="container">
+                <h2>Prenota un appuntamento</h2>
+                <p>Pronto a creare il tuo prossimo pezzo d'arte? Pianifica la tua visita con noi.</p>
+                <div class="booking-form-container">
+                    <form action="https://formspree.io/f/xblkdwzn" method="POST" class="booking-form">
+                        <div class="form-group">
+                            <label for="name">Nome e Cognome*</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Data *</label>
+                            <div class="date-picker-wrapper">
+                                <input type="text" id="date" name="date" required readonly placeholder="Seleziona una data">
+                                <div class="date-icon">📅</div>
+                                <div class="custom-calendar" id="custom-calendar" style="display: none;">
+                                    <div class="calendar-header">
+                                        <button type="button" class="calendar-nav" id="prev-month">&lt;</button>
+                                        <span id="current-month">Gennaio 2025</span>
+                                        <button type="button" class="calendar-nav" id="next-month">&gt;</button>
+                                    </div>
+                                    <div class="calendar-weekdays">
+                                        <div>Lun</div>
+                                        <div>Mar</div>
+                                        <div>Mer</div>
+                                        <div>Gio</div>
+                                        <div>Ven</div>
+                                        <div>Sab</div>
+                                        <div class="unavailable">Dom</div>
+                                    </div>
+                                    <div class="calendar-days" id="calendar-days"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group" id="time-group" style="display: none;">
+                            <label for="time">Orario *</label>
+                            <div class="time-grid">
+                                <div class="time-slot" data-time="10:00">10:00</div>
+                                <div class="time-slot" data-time="10:30">10:30</div>
+                                <div class="time-slot" data-time="11:00">11:00</div>
+                                <div class="time-slot" data-time="11:30">11:30</div>
+                                <div class="time-slot" data-time="12:00">12:00</div>
+                                <div class="time-slot" data-time="12:30">12:30</div>
+                                <div class="time-slot" data-time="13:00">13:00</div>
+                                <div class="time-slot" data-time="13:30">13:30</div>
+                                <div class="time-slot" data-time="14:00">14:00</div>
+                                <div class="time-slot" data-time="14:30">14:30</div>
+                                <div class="time-slot" data-time="15:00">15:00</div>
+                                <div class="time-slot" data-time="15:30">15:30</div>
+                                <div class="time-slot" data-time="16:00">16:00</div>
+                                <div class="time-slot" data-time="16:30">16:30</div>
+                                <div class="time-slot" data-time="17:00">17:00</div>
+                                <div class="time-slot" data-time="17:30">17:30</div>
+                                <div class="time-slot" data-time="18:00">18:00</div>
+                                <div class="time-slot" data-time="18:30">18:30</div>
+                                <div class="time-slot" data-time="19:00">19:00</div>
+                                <input type="hidden" id="time" name="time" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Messaggio</label>
+                            <textarea id="message" name="message" rows="3" placeholder="Descrivi la tua richiesta o qualsiasi domanda"></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Prenota ora</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section-padded light-bg">
+            <div class="container">
+                <h2>Su di me</h2>
+                <p>Mi chiamo Samuele e Sammurai Piercing è il mio spazio creativo, dove ogni piercing è fatto con cura, precisione e un bel po’ di passione.</p>
+                <div class="about-content">
+                    <img src="piercer.jpg" alt="About Us image" class="about-img framed-img">
+                    <p>Sammurai Piercing nasce dall’amore per l’arte del corpo. Igiene, consigli sinceri e zero pressioni: è così che lavoro.</p>
+                    <p>Se vuoi un piercing che parli davvero di te, sei nel posto giusto.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-col">
+                <h3>Sammurai Piercing</h3>
+                <p>Precision. Artistry. Expression.</p>
+                <p>&copy; 2025 Sammurai Piercing. All rights reserved.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Contatti</h3>
+                <p>Milano, Italia</p>
+                <p>
+                    <a href="https://wa.me/393891860232" target="_blank" class="social-link whatsapp-link">
+                        <span class="social-icon" style="display:inline-block;vertical-align:middle;">
+                            <!-- WhatsApp SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="12" fill="#25D366"/><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.472-.148-.67.15-.198.297-.767.967-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.372-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.099 3.205 5.077 4.372.71.306 1.263.489 1.695.626.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.288.173-1.413-.074-.124-.272-.198-.57-.347z" fill="#fff"/></svg>
+                        </span>
+                       WhatsApp +39 3891860232
+                    </a>
+                </p>
+            </div>
+            <div class="footer-col">
+                <h3>Social</h3>
+                <p>
+                    <a href="https://www.instagram.com/sammurai.piercing" target="_blank" class="social-link instagram-link">
+                        <span class="social-icon" style="display:inline-block;vertical-align:middle;">
+                            <!-- Instagram SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><radialGradient id="ig-gradient" cx="0.5" cy="0.5" r="0.8"><stop offset="0%" stop-color="#f9ce34"/><stop offset="45%" stop-color="#ee2a7b"/><stop offset="100%" stop-color="#6228d7"/></radialGradient><rect width="24" height="24" rx="6" fill="url(#ig-gradient)"/><rect x="6.5" y="6.5" width="11" height="11" rx="5.5" stroke="#fff" stroke-width="1.5" fill="none"/><circle cx="12" cy="12" r="3.2" stroke="#fff" stroke-width="1.5" fill="none"/><circle cx="17.1" cy="6.9" r="1" fill="#fff"/></svg>
+                        </span>
+                        Seguimi su Instagram
+                    </a>
+                </p>
+                <h4>Orario Apertura:</h4>
+                <p>Lun - Ven: 10:00 - 19:00</p>
+                <p>Sabato: 10:00 - 14:00</p>
+                <p>Domenica: Chiuso</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const bookingForm = document.querySelector('.booking-form');
+            const dateInput = document.getElementById('date');
+            const timeGroup = document.getElementById('time-group');
+            const customCalendar = document.getElementById('custom-calendar');
+            const calendarDays = document.getElementById('calendar-days');
+            const currentMonthSpan = document.getElementById('current-month');
+            const prevMonthBtn = document.getElementById('prev-month');
+            const nextMonthBtn = document.getElementById('next-month');
+            
+            let currentDate = new Date();
+            let selectedDate = null;
+            
+            // Booking management system
+            class BookingManager {
+                constructor() {
+                    this.storageKey = 'sammurai_bookings';
+                    this.adminVisible = false;
+                    this.init();
+                }
+                
+                init() {
+                    // Add admin panel to the page but hidden by default
+                    this.createAdminPanel();
+                    
+                    // Add secret access method
+                    this.addSecretAccess();
+                }
+                
+                addSecretAccess() {
+                    // Secret key combination to access admin panel
+                    let keySequence = '';
+                    const secretCode = 'Sam13uele'; // You can change this to any code you want
+                    
+                    // Desktop keyboard access
+                    document.addEventListener('keydown', (e) => {
+                        keySequence += e.key;
+                        
+                        // Keep only last 10 characters
+                        if (keySequence.length > 10) {
+                            keySequence = keySequence.slice(-10);
+                        }
+                        
+                        // Check if secret code is entered
+                        if (keySequence.includes(secretCode)) {
+                            this.toggleAdminPanel();
+                            keySequence = ''; // Reset sequence
+                        }
+                    });
+                    
+                    // Mobile-friendly access - add a hidden button that appears on long press
+                    this.addMobileAccess();
+                }
+                
+                addMobileAccess() {
+                    // Create a hidden mobile access area
+                    const mobileAccess = document.createElement('div');
+                    mobileAccess.id = 'mobile-access';
+                    mobileAccess.style.cssText = `
+                        position: fixed;
+                        top: 10px;
+                        right: 10px;
+                        width: 50px;
+                        height: 50px;
+                        background: transparent;
+                        z-index: 9999;
+                        opacity: 0;
+                        transition: opacity 0.3s;
+                    `;
+                    mobileAccess.innerHTML = `
+                        <div style="
+                            width: 100%;
+                            height: 100%;
+                            background: rgba(0,0,0,0.1);
+                            border-radius: 50%;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            font-size: 20px;
+                            color: #666;
+                        ">🔓</div>
+                    `;
+                    document.body.appendChild(mobileAccess);
+                    
+                    let longPressTimer;
+                    let isLongPressed = false;
+                    
+                    // Show access area on long press anywhere
+                    document.addEventListener('touchstart', (e) => {
+                        longPressTimer = setTimeout(() => {
+                            mobileAccess.style.opacity = '1';
+                            isLongPressed = true;
+                        }, 5000); // 5 seconds long press
+                    });
+                    
+                    document.addEventListener('touchend', () => {
+                        clearTimeout(longPressTimer);
+                        if (isLongPressed) {
+                            setTimeout(() => {
+                                mobileAccess.style.opacity = '0';
+                                isLongPressed = false;
+                            }, 3000); // Hide after 3 seconds
+                        }
+                    });
+                    
+                    // Click the access area to show admin panel
+                    mobileAccess.addEventListener('click', () => {
+                        // Show password prompt before opening admin panel
+                        const password = prompt('Inserisci la password di amministratore:');
+                        if (password === 'Sam13uele') { // Change this to your desired password
+                            this.toggleAdminPanel();
+                        } else if (password !== null) {
+                            alert('Password errata. Accesso negato.');
+                        }
+                        mobileAccess.style.opacity = '0';
+                    });
+                    
+                    // Also add a simple tap sequence for mobile
+                    let tapCount = 0;
+                    let lastTapTime = 0;
+                    
+                    document.addEventListener('touchstart', (e) => {
+                        const currentTime = new Date().getTime();
+                        const tapLength = currentTime - lastTapTime;
+                        
+                        if (tapLength < 500 && tapLength > 0) {
+                            tapCount++;
+                            if (tapCount === 5) { // 5 quick taps
+                                this.toggleAdminPanel();
+                                tapCount = 0;
+                            }
+                        } else {
+                            tapCount = 1;
+                        }
+                        lastTapTime = currentTime;
+                    });
+                }
+                
+                createAdminPanel() {
+                    const adminPanel = document.createElement('div');
+                    adminPanel.id = 'admin-panel';
+                    adminPanel.style.display = 'none'; // Hidden by default
+                    adminPanel.innerHTML = `
+                        <div class="admin-header">
+                            <h3>🔒 Admin Panel - Booking Management</h3>
+                            <button id="toggle-admin" class="btn secondary-btn">Hide Admin Panel</button>
+                        </div>
+                        <div id="bookings-container">
+                            <div class="bookings-header">
+                                <h4>Weekly Schedule</h4>
+                                <div class="date-navigation">
+                                    <button id="prev-week" class="btn nav-btn">← Settimana Precedente</button>
+                                    <span id="current-week-display">Settimana Corrente</span>
+                                    <button id="next-week" class="btn nav-btn">Settimana Successiva →</button>
+                                </div>
+                                <button id="clear-bookings" class="btn danger-btn">Clear All</button>
+                            </div>
+                            <div id="bookings-list"></div>
+                        </div>
+                    `;
+                    
+                    // Insert after the booking form
+                    const bookingSection = document.getElementById('booking');
+                    bookingSection.appendChild(adminPanel);
+                    
+                    // Add event listeners
+                    document.getElementById('toggle-admin').addEventListener('click', () => {
+                        this.hideAdminPanel();
+                    });
+                    
+                    document.getElementById('clear-bookings').addEventListener('click', () => {
+                        if (confirm('Are you sure you want to clear all bookings?')) {
+                            this.clearAllBookings();
+                        }
+                    });
+                    
+                    // Add date navigation listeners
+                    this.setupDateNavigation();
+                }
+                
+                setupDateNavigation() {
+                    this.currentWeekStart = this.getWeekStart(new Date());
+                    
+                    document.getElementById('prev-week').addEventListener('click', () => {
+                        this.currentWeekStart.setDate(this.currentWeekStart.getDate() - 7);
+                        this.updateWeekDisplay();
+                        this.displayBookings();
+                    });
+                    
+                    document.getElementById('next-week').addEventListener('click', () => {
+                        this.currentWeekStart.setDate(this.currentWeekStart.getDate() + 7);
+                        this.updateWeekDisplay();
+                        this.displayBookings();
+                    });
+                    
+                    this.updateWeekDisplay();
+                }
+                
+                getWeekStart(date) {
+                    const d = new Date(date);
+                    const day = d.getDay();
+                    const diff = d.getDate() - day + (day === 0 ? -6 : 1); // Adjust when day is Sunday
+                    return new Date(d.setDate(diff));
+                }
+                
+                updateWeekDisplay() {
+                    const weekEnd = new Date(this.currentWeekStart);
+                    weekEnd.setDate(weekEnd.getDate() + 6);
+                    
+                    const startDate = this.currentWeekStart.toLocaleDateString('it-IT', { 
+                        day: 'numeric', 
+                        month: 'short' 
+                    });
+                    const endDate = weekEnd.toLocaleDateString('it-IT', { 
+                        day: 'numeric', 
+                        month: 'short',
+                        year: 'numeric'
+                    });
+                    
+                    const isCurrentWeek = this.isCurrentWeek(this.currentWeekStart);
+                    const displayText = isCurrentWeek ? 'Settimana Corrente' : `${startDate} - ${endDate}`;
+                    
+                    document.getElementById('current-week-display').textContent = displayText;
+                }
+                
+                isCurrentWeek(weekStart) {
+                    const today = new Date();
+                    const currentWeekStart = this.getWeekStart(today);
+                    return weekStart.getTime() === currentWeekStart.getTime();
+                }
+                
+                toggleAdminPanel() {
+                    const adminPanel = document.getElementById('admin-panel');
+                    if (adminPanel.style.display === 'none') {
+                        adminPanel.style.display = 'block';
+                        this.adminVisible = true;
+                        this.displayBookings();
+                        
+                        // Show access notification
+                        this.showAccessNotification();
+                    }
+                }
+                
+                hideAdminPanel() {
+                    const adminPanel = document.getElementById('admin-panel');
+                    adminPanel.style.display = 'none';
+                    this.adminVisible = false;
+                }
+                
+                showAccessNotification() {
+                    // Create a temporary notification
+                    const notification = document.createElement('div');
+                    notification.style.cssText = `
+                        position: fixed;
+                        top: 20px;
+                        right: 20px;
+                        background: #28a745;
+                        color: white;
+                        padding: 15px 20px;
+                        border-radius: 8px;
+                        z-index: 10000;
+                        font-weight: 500;
+                        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                    `;
+                    notification.textContent = '🔓 Admin panel accessed';
+                    document.body.appendChild(notification);
+                    
+                    // Remove after 3 seconds
+                    setTimeout(() => {
+                        notification.remove();
+                    }, 3000);
+                }
+                
+                saveBooking(bookingData) {
+                    const bookings = this.getBookings();
+                    const newBooking = {
+                        id: Date.now(),
+                        timestamp: new Date().toISOString(),
+                        ...bookingData
+                    };
+                    bookings.unshift(newBooking); // Add to beginning
+                    
+                    // Keep only last 50 bookings
+                    if (bookings.length > 50) {
+                        bookings.splice(50);
+                    }
+                    
+                    localStorage.setItem(this.storageKey, JSON.stringify(bookings));
+                    
+                    return newBooking;
+                }
+                
+                getBookings() {
+                    const stored = localStorage.getItem(this.storageKey);
+                    return stored ? JSON.parse(stored) : [];
+                }
+                
+                getBookingsForDate(dateString) {
+                    const bookings = this.getBookings();
+                    console.log('Looking for bookings on date:', dateString);
+                    console.log('All bookings:', bookings);
+                    const filteredBookings = bookings.filter(booking => {
+                        console.log('Comparing:', booking.date, 'with', dateString, 'Result:', booking.date === dateString);
+                        return booking.date === dateString;
+                    });
+                    console.log('Found bookings:', filteredBookings);
+                    return filteredBookings;
+                }
+                
+                clearAllBookings() {
+                    localStorage.removeItem(this.storageKey);
+                    this.displayBookings();
+                }
+                
+                displayBookings() {
+                    const bookings = this.getBookings();
+                    const container = document.getElementById('bookings-list');
+                    
+                    if (bookings.length === 0) {
+                        container.innerHTML = '<p class="no-bookings">No bookings found.</p>';
+                        return;
+                    }
+                    
+                    console.log('Displaying bookings:', bookings);
+                    
+                    // Get bookings for the selected week
+                    const weekBookings = this.getBookingsForWeek(this.currentWeekStart, bookings);
+                    
+                    // Create the weekly schedule view
+                    const weeklySchedule = this.createWeeklySchedule(weekBookings);
+                    
+                    container.innerHTML = weeklySchedule;
+                }
+                
+                getBookingsForWeek(weekStart, allBookings) {
+                    const weekEnd = new Date(weekStart);
+                    weekEnd.setDate(weekEnd.getDate() + 6);
+                    
+                    return allBookings.filter(booking => {
+                        const bookingDate = new Date(booking.date.split('/').reverse().join('-'));
+                        return bookingDate >= weekStart && bookingDate <= weekEnd;
+                    });
+                }
+                
+                groupBookingsByDay(bookings) {
+                    const daysOfWeek = ['Domenica', 'Lunedì', 'Martedì', 'Mercoledì', 'Giovedì', 'Venerdì', 'Sabato'];
+                    const bookingsByDay = {};
+                    
+                    // Initialize all days
+                    daysOfWeek.forEach(day => {
+                        bookingsByDay[day] = [];
+                    });
+                    
+                    // Group bookings by day
+                    bookings.forEach(booking => {
+                        const bookingDate = new Date(booking.date.split('/').reverse().join('-'));
+                        const dayOfWeek = daysOfWeek[bookingDate.getDay()];
+                        bookingsByDay[dayOfWeek].push(booking);
+                    });
+                    
+                    return bookingsByDay;
+                }
+                
+                createWeeklySchedule(weekBookings) {
+                    const daysOfWeek = ['Lunedì', 'Martedì', 'Mercoledì', 'Giovedì', 'Venerdì', 'Sabato', 'Domenica'];
+                    const today = new Date();
+                    const currentDay = today.getDay();
+                    
+                    // Group bookings by day for this week
+                    const bookingsByDay = this.groupBookingsByDay(weekBookings);
+                    
+                    let scheduleHTML = '<div class="weekly-schedule">';
+                    
+                    daysOfWeek.forEach((day, index) => {
+                        const dayBookings = bookingsByDay[day] || [];
+                        const isToday = this.isCurrentWeek(this.currentWeekStart) && (index + 1) % 7 === currentDay;
+                        const isPast = this.isCurrentWeek(this.currentWeekStart) && index < currentDay - 1;
+                        
+                        scheduleHTML += `
+                            <div class="day-column ${isToday ? 'today' : ''} ${isPast ? 'past' : ''}">
+                                <div class="day-header">
+                                    <h4>${day}</h4>
+                                    <span class="booking-count">${dayBookings.length} prenotazioni</span>
+                                </div>
+                                <div class="day-bookings">
+                                    ${dayBookings.length === 0 ? 
+                                        '<p class="no-bookings-day">Nessuna prenotazione</p>' : 
+                                        dayBookings.map(booking => this.createBookingCard(booking)).join('')
+                                    }
+                                </div>
+                            </div>
+                        `;
+                    });
+                    
+                    scheduleHTML += '</div>';
+                    return scheduleHTML;
+                }
+                
+                createBookingCard(booking) {
+                    return `
+                        <div class="booking-card" data-booking-id="${booking.id}">
+                            <div class="booking-card-header">
+                                <span class="booking-time">${booking.time}</span>
+                                <button class="delete-booking-btn-small" onclick="bookingManager.deleteBooking(${booking.id})" title="Elimina prenotazione">
+                                    🗑️
+                                </button>
+                            </div>
+                            <div class="booking-card-content">
+                                <div class="booking-name">${booking.name}</div>
+                                <div class="booking-email">📧 ${booking.email}</div>
+                                ${booking.message ? `<div class="booking-message">💬 ${booking.message}</div>` : ''}
+                                <div class="booking-date">${booking.date}</div>
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                deleteBooking(bookingId) {
+                    if (confirm('Are you sure you want to delete this booking?')) {
+                        const bookings = this.getBookings();
+                        const updatedBookings = bookings.filter(booking => booking.id !== bookingId);
+                        localStorage.setItem(this.storageKey, JSON.stringify(updatedBookings));
+                        this.displayBookings();
+                        
+                        // Show deletion notification
+                        this.showDeletionNotification();
+                    }
+                }
+                
+                showDeletionNotification() {
+                    const notification = document.createElement('div');
+                    notification.style.cssText = `
+                        position: fixed;
+                        top: 20px;
+                        right: 20px;
+                        background: #dc3545;
+                        color: white;
+                        padding: 15px 20px;
+                        border-radius: 8px;
+                        z-index: 10000;
+                        font-weight: 500;
+                        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                    `;
+                    notification.textContent = '🗑️ Booking deleted';
+                    document.body.appendChild(notification);
+                    
+                    // Remove after 3 seconds
+                    setTimeout(() => {
+                        notification.remove();
+                    }, 3000);
+                }
+            }
+            
+            // Initialize booking manager
+            const bookingManager = new BookingManager();
+            
+            // Make bookingManager globally accessible for the delete button
+            window.bookingManager = bookingManager;
+            
+            // Italian month names
+            const monthNames = [
+                'Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio', 'Giugno',
+                'Luglio', 'Agosto', 'Settembre', 'Ottobre', 'Novembre', 'Dicembre'
+            ];
+            
+            // Function to check if a date is unavailable
+            function isDateUnavailable(date) {
+                const dayOfWeek = date.getDay();
+                return dayOfWeek === 0; // Sunday is unavailable
+            }
+            
+            // Function to format date for display (Italian format)
+            function formatDate(date) {
+                const year = date.getFullYear();
+                const month = String(date.getMonth() + 1).padStart(2, '0');
+                const day = String(date.getDate()).padStart(2, '0');
+                return `${day}/${month}/${year}`;
+            }
+            
+            // Function to format date for form submission (ISO format)
+            function formatDateForSubmission(date) {
+                const year = date.getFullYear();
+                const month = String(date.getMonth() + 1).padStart(2, '0');
+                const day = String(date.getDate()).padStart(2, '0');
+                return `${year}-${month}-${day}`;
+            }
+            
+            // Function to render calendar
+            function renderCalendar() {
+                const year = currentDate.getFullYear();
+                const month = currentDate.getMonth();
+                
+                // Update month display
+                currentMonthSpan.textContent = `${monthNames[month]} ${year}`;
+                
+                // Get first day of month and number of days
+                const firstDay = new Date(year, month, 1);
+                const lastDay = new Date(year, month + 1, 0);
+                const startDate = new Date(firstDay);
+                startDate.setDate(startDate.getDate() - firstDay.getDay() + 1); // Start from Monday
+                
+                calendarDays.innerHTML = '';
+                
+                const today = new Date();
+                const todayYear = today.getFullYear();
+                const todayMonth = today.getMonth();
+                const todayDay = today.getDate();
+                const todayDate = new Date(todayYear, todayMonth, todayDay);
+                
+                // Generate calendar days
+                for (let i = 0; i < 42; i++) { // 6 weeks * 7 days
+                    const currentDay = new Date(startDate);
+                    currentDay.setDate(startDate.getDate() + i);
+                    
+                    const dayElement = document.createElement('div');
+                    dayElement.className = 'calendar-day';
+                    dayElement.textContent = currentDay.getDate();
+                    
+                    // Check if it's today
+                    if (currentDay.getFullYear() === todayDate.getFullYear() && 
+                        currentDay.getMonth() === todayDate.getMonth() && 
+                        currentDay.getDate() === todayDate.getDate()) {
+                        dayElement.classList.add('today');
+                    }
+                    
+                    // Check if it's selected
+                    if (selectedDate && 
+                        currentDay.getFullYear() === selectedDate.getFullYear() && 
+                        currentDay.getMonth() === selectedDate.getMonth() && 
+                        currentDay.getDate() === selectedDate.getDate()) {
+                        dayElement.classList.add('selected');
+                    }
+                    
+                    // Check if it's unavailable (Sunday)
+                    if (isDateUnavailable(currentDay)) {
+                        dayElement.classList.add('unavailable');
+                    }
+                    
+                    // Check if it's in the past
+                    if (currentDay < todayDate) {
+                        dayElement.classList.add('past');
+                    }
+                    
+                    // Check if it's from other month
+                    if (currentDay.getMonth() !== month) {
+                        dayElement.classList.add('other-month');
+                    }
+                    
+                    // Add click event
+                    if (!dayElement.classList.contains('unavailable') && !dayElement.classList.contains('past')) {
+                        dayElement.addEventListener('click', () => {
+                            selectedDate = currentDay;
+                            dateInput.value = formatDate(currentDay);
+                            customCalendar.style.display = 'none';
+                            renderCalendar();
+                            
+                            // Trigger change event to show time slots
+                            const event = new Event('change');
+                            dateInput.dispatchEvent(event);
+                        });
+                    }
+                    
+                    calendarDays.appendChild(dayElement);
+                }
+            }
+            
+            // Toggle calendar on input click
+            dateInput.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (customCalendar.style.display === 'none') {
+                    customCalendar.style.display = 'block';
+                    renderCalendar();
+                } else {
+                    customCalendar.style.display = 'none';
+                }
+            });
+            
+            // Navigation buttons
+            prevMonthBtn.addEventListener('click', () => {
+                currentDate.setMonth(currentDate.getMonth() - 1);
+                renderCalendar();
+            });
+            
+            nextMonthBtn.addEventListener('click', () => {
+                currentDate.setMonth(currentDate.getMonth() + 1);
+                renderCalendar();
+            });
+            
+            // Close calendar when clicking outside
+            document.addEventListener('click', function(e) {
+                if (!dateInput.contains(e.target) && !customCalendar.contains(e.target)) {
+                    customCalendar.style.display = 'none';
+                }
+            });
+            
+            // Show time grid when date is selected
+            dateInput.addEventListener('change', function() {
+                if (this.value) {
+                    // Hide the calendar dropdown
+                    this.blur();
+                    
+                    const selectedDate = new Date(this.value);
+                    const today = new Date();
+                    const isToday = selectedDate.toDateString() === today.toDateString();
+                    const currentHour = today.getHours();
+                    const currentMinute = today.getMinutes();
+                    const dayOfWeek = selectedDate.getDay();
+                    
+                    // Get existing bookings for this date
+                    const existingBookings = bookingManager.getBookingsForDate(this.value);
+                    const bookedTimes = existingBookings.map(booking => booking.time);
+                    
+                    const timeSlots = document.querySelectorAll('.time-slot');
+                    timeSlots.forEach(slot => {
+                        const timeValue = slot.getAttribute('data-time');
+                        const [hour, minute] = timeValue.split(':').map(Number);
+                        
+                        let showSlot = true;
+                        
+                        // Apply working hours
+                        if (dayOfWeek === 6) { // Saturday
+                            if (hour < 10 || hour >= 14) {
+                                showSlot = false;
+                            }
+                        } else { // Weekdays
+                            if (hour < 10 || hour >= 19) {
+                                showSlot = false;
+                            }
+                        }
+                        
+                        // Apply past time filtering for today
+                        if (isToday && showSlot) {
+                            if (hour < currentHour || (hour === currentHour && minute <= currentMinute)) {
+                                showSlot = false;
+                            }
+                        }
+                        
+                        // Check if this time slot is already booked
+                        if (showSlot && bookedTimes.includes(timeValue)) {
+                            showSlot = false;
+                            slot.classList.add('booked');
+                            slot.title = 'This time slot is already booked';
+                        } else {
+                            slot.classList.remove('booked');
+                            slot.title = '';
+                        }
+                        
+                        slot.style.display = showSlot ? 'block' : 'none';
+                    });
+                    
+                    // Show message if no available slots
+                    const availableSlots = Array.from(timeSlots).filter(slot => 
+                        slot.style.display === 'block' && !slot.classList.contains('booked')
+                    );
+                    
+                    if (availableSlots.length === 0) {
+                        const noSlotsMessage = document.createElement('div');
+                        noSlotsMessage.className = 'no-slots-message';
+                        noSlotsMessage.innerHTML = `
+                            <p>📅 No available time slots for this date.</p>
+                            <p>Please select a different date or contact us directly.</p>
+                        `;
+                        timeGroup.appendChild(noSlotsMessage);
+                    } else {
+                        // Remove any existing no-slots message
+                        const existingMessage = timeGroup.querySelector('.no-slots-message');
+                        if (existingMessage) {
+                            existingMessage.remove();
+                        }
+                    }
+                    
+                    timeGroup.style.display = 'block';
+                    timeGroup.style.opacity = '0';
+                    timeGroup.style.transform = 'translateY(10px)';
+                    setTimeout(() => {
+                        timeGroup.style.transition = 'all 0.3s ease';
+                        timeGroup.style.opacity = '1';
+                        timeGroup.style.transform = 'translateY(0)';
+                    }, 10);
+                } else {
+                    timeGroup.style.display = 'none';
+                }
+            });
+            
+            // Time slot selection
+            const timeSlots = document.querySelectorAll('.time-slot');
+            const timeInput = document.getElementById('time');
+            
+            timeSlots.forEach(slot => {
+                slot.addEventListener('click', function() {
+                    // Remove selected class from all slots
+                    timeSlots.forEach(s => s.classList.remove('selected'));
+                    
+                    // Add selected class to clicked slot
+                    this.classList.add('selected');
+                    
+                    // Update hidden input value
+                    timeInput.value = this.getAttribute('data-time');
+                    
+                    // Hide all other time slots and show only the selected one
+                    timeSlots.forEach(s => {
+                        if (s !== this) {
+                            s.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            bookingForm.addEventListener('submit', function(e) {
+                e.preventDefault(); // Prevent default form submission
+                
+                // Use the Italian date format for saving
+                let dateToSave = dateInput.value;
+                if (selectedDate) {
+                    dateToSave = formatDate(selectedDate); // Use Italian format
+                }
+                
+                // Collect form data
+                const formData = new FormData(bookingForm);
+                const bookingData = {
+                    name: formData.get('name'),
+                    email: formData.get('email'),
+                    date: dateToSave, // Use Italian format
+                    time: formData.get('time'),
+                    message: formData.get('message')
+                };
+                
+                console.log('Saving booking with date:', dateToSave);
+                console.log('Full booking data:', bookingData);
+                
+                // Save booking locally
+                bookingManager.saveBooking(bookingData);
+                
+                // Submit to Formspree for email notification
+                const formspreeForm = document.createElement('form');
+                formspreeForm.method = 'POST';
+                formspreeForm.action = 'https://formspree.io/f/xblkdwzn';
+                formspreeForm.style.display = 'none';
+                
+                // Add form data to Formspree submission
+                Object.keys(bookingData).forEach(key => {
+                    const input = document.createElement('input');
+                    input.type = 'hidden';
+                    input.name = key;
+                    input.value = bookingData[key];
+                    formspreeForm.appendChild(input);
+                });
+                
+                document.body.appendChild(formspreeForm);
+                formspreeForm.submit();
+                document.body.removeChild(formspreeForm);
+                
+                // Show success message
+                alert('Prenotazione salvata con successo! Ti contatteremo presto.\n\n📧 Email di notifica inviato.');
+                
+                // Reset form
+                bookingForm.reset();
+                timeGroup.style.display = 'none';
+                selectedDate = null;
+                
+                // Update bookings display if visible
+                const bookingsContainer = document.getElementById('bookings-container');
+                if (bookingsContainer.style.display === 'block') {
+                    bookingManager.displayBookings();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
